@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'AttritionMultiValFilt'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8B8B4E509D0F4CAA8DC4892D7ADCCBC9 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_90633E45A0C74652BF785FE559EFB2B9 }}
