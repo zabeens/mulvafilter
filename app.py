@@ -41,10 +41,8 @@ import psycopg2
 import json
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
-conn = psycopg2.connect(database="ds_db",user="postgres", password="HRA@2021", host="10.246.90.166")
-conn.autocommit = True
-cur= conn.cursor()
-data = pd.read_sql('select * from Classification_Output',conn)
+url="https://raw.githubusercontent.com/zabeens/mulvafilter/main/classification_output1705%20(4).csv"
+data=pd.read_csv(url)
 ##------------------------------------------------------------------------------------------------------------
                                  ## (1). Form/Application Input Format - POSTMAN - SINGLE ROW 
 ##------------------------------------------------------------------------------------------------------------
